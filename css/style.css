@@ -6,7 +6,7 @@ main,footer,header{
     padding: 10px;
 }
 h1{
-    font-size: 75px;
+    font-size: 50px;
     padding: 5px;
     padding-top: 50px;
     margin: 10px;
@@ -33,12 +33,12 @@ p{
     padding: 10px;
     margin: 10px;  
 }
-nav li{
+nav{
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    
     /*padding: 10px;
     margin: 0px;*/
-    width: 15%;
     background-color: #bdbdbd;
     /*border: 2px solid black;*/
 }
@@ -58,19 +58,22 @@ a.skip{
 }
 img {
     margin: 0px;
-    padding: 10px;
+    padding: 5px;
     filter: grayscale(60%);
+    width: 350px;
+    height:auto ;
 }
 img:hover{
     filter: grayscale(0%);
+    background-color: #c2d3ed;
 }
 
 .index_img{
      display: grid;
      justify-content: space-around;
  }
- .index_img img{
-    grid-template-columns: 1fr 1fr;
+ img .index_img{
+     width: 500px;
  }
 
 .lifestyle{
@@ -85,6 +88,12 @@ img:hover{
 }
 .homescreen{
     height: 100vh;
-    background-image: url("../images/chicago-salad.jpg"); 
-
+    /*background-image: url("../images/chicago-salad.jpg"); */
+    background-color: white;
+}
+ol{
+    margin: 10px
+}
+.bigger{
+    font-size: 70px;
 }
