@@ -1,0 +1,90 @@
+body{
+    background-color: white;
+    font-family: 'montserrat';
+}
+main,footer,header{
+    padding: 10px;
+}
+h1{
+    font-size: 75px;
+    padding: 5px;
+    padding-top: 50px;
+    margin: 10px;
+    font-family: 'montserrat';
+    font-weight: bolder;
+    text-align: center;
+}
+.main_blurb{
+    text-align: center;
+    font-size: 30px;
+}
+h2{
+    font-size: 22px;
+    padding: 5px;
+    margin: 10px;
+}
+h3{
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+p{
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;  
+}
+nav li{
+    display: flex;
+    flex-flow: row nowrap;
+    /*padding: 10px;
+    margin: 0px;*/
+    width: 15%;
+    background-color: #bdbdbd;
+    /*border: 2px solid black;*/
+}
+
+
+a:hover{
+    color:blueviolet;
+    font-weight: bolder;
+}
+.active{
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+}
+a.skip{
+    display: nonw;
+}
+img {
+    margin: 0px;
+    padding: 10px;
+    filter: grayscale(60%);
+}
+img:hover{
+    filter: grayscale(0%);
+}
+
+.index_img{
+     display: grid;
+     justify-content: space-around;
+ }
+ .index_img img{
+    grid-template-columns: 1fr 1fr;
+ }
+
+.lifestyle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.lifestyle img {
+    justify-self: center;
+    width: 200px;
+    overflow: hidden;
+
+}
+.homescreen{
+    height: 100vh;
+    background-image: url("../images/chicago-salad.jpg"); 
+
+}
