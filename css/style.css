@@ -60,8 +60,9 @@ img {
     margin: 0px;
     padding: 5px;
     filter: grayscale(60%);
-    width: 350px;
-    height:auto ;
+    width: 200px;
+    height:200px;
+    overflow: hidden;
 }
 img:hover{
     filter: grayscale(0%);
@@ -97,3 +98,19 @@ ol{
 .bigger{
     font-size: 70px;
 }
+form{
+    background-color: #c0b8d4;
+}
+label {
+    display: inline-block;
+    text-align: center;
+}
+input, textarea {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+  }
+ 
