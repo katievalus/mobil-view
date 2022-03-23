@@ -37,27 +37,72 @@ p{
     padding: 10px;
     margin: 10px;  
 }
-nav {
-    border-top: 1px solid rgb(192, 192, 192);
-    border-bottom: 1px solid rgb(192, 192, 192);
-    width: 100%;
+
+.nav{
+    padding: 1px;
+    border-bottom: 1px solid lightgrey ;
 }
- nav ul{
+.nav__toggle{
+    position:absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
+}
+i{
+   width: 1.5rem;
+   fill: lightgrey;
+}
+.fa-solid.fa-xmark{
+    display: none;
+}
+.fa-solid.fa-bars{
+    margin-top: 0.2rem;
+}
+.nav__checkbox{
+    display: none;
+}
+.nav__menu{
     display: flex;
-    flex-direction: row;
-    background-color: #ffffff;
-    justify-content: space-around;
-    line-height: 45px;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem;
+}
+li{
+    list-style: none;
+    display: none;
+    }
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+}
+#nav__checkbox:checked ~ ul.nav__menu li{
+    display: block;
+
+}
+/*
+#nav__checkbox:checked ~ label.nav__toggle.fa-xmark{
+    display: block;
+}
+#nav__checkbox:checked ~ label.nav__toggle.fa-bars{
+    display: none;
+}*/
+
+
+
+
+
+
+.active{
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
 }
 
 a:hover{
     color:blueviolet;
     font-weight: bolder;
-}
-.active{
-    font-size: 20px;
-    font-weight: bold;
-    border: 2px solid blueviolet;
 }
 a.skip{
     display: none;
@@ -157,3 +202,17 @@ input, textarea {
        animation: none;
    }
   }
+
+
+  @media only screen and (min-width:560px){
+    .nav__toggle{
+        display: none;
+    }
+    .nav__menu{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav__menu li{
+        display: block;
+    }
+}
