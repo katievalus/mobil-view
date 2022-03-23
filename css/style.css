@@ -2,7 +2,7 @@ body{
     background-color: white;
     font-family: 'preconnect';
 }
-main,footer,header{
+#main,footer,header{
     padding: 10px;
 }
 h1{
@@ -47,6 +47,7 @@ nav {
     flex-direction: row;
     background-color: #ffffff;
     justify-content: space-around;
+    line-height: 45px;
 }
 
 a:hover{
@@ -94,9 +95,12 @@ img:hover{
 }
 .homescreen{
     height: 75vh;
-    background-image: url("../images/copy-chi-salad.jpg"); 
-    background-position: center;
+    background-image: url("../images/lower-res-salad.jpg"); 
     background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     /*background-color: white;*/
 }
 ol{
@@ -121,4 +125,35 @@ input, textarea {
     border: 1px solid #ccc;
     box-sizing: border-box; 
   }
- 
+  .breakfast_heading{
+      height: 100vh;
+      text-align: center;
+      background-image: url("../images/trasnparetngsmoothie.jpg");
+      background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+@keyframes katiesKitchen {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  #main{
+    animation-name: katiesKitchen;
+    animation-duration: 2s;
+
+  }
+
+  @media screen and (prefers-reduced-motion: reduce){
+   #main{
+       animation: none;
+   }
+  }
