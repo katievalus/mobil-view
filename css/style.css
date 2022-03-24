@@ -2,7 +2,7 @@ body{
     background-color: white;
     font-family: 'preconnect';
 }
-h1, h2, p, li, label, input{
+h2, p, li, label, input{
     font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
 }
@@ -25,7 +25,7 @@ h1{
     margin-top: 50px;
     
 }
-.homescreen{
+.homescreen h1, .homescreen p{
     align-items: center;
 }
 .homescreen p{
@@ -49,8 +49,10 @@ p{
     padding: 10px;
     margin: 10px;  
 }
-.grid_recepies{
-    display: grid;
+.flex_gallery{
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
 }
 .nav{
     padding: 1px;
@@ -82,7 +84,7 @@ i{
     align-items: center;
     margin: 1rem;
 }
-li{
+.nav__menu li{
     list-style: none;
     display: none;
     }
@@ -123,10 +125,15 @@ a:hover{
     color:blueviolet;
     font-weight: bolder;
 }
-a.skip{
-    display: none;
+.skip{
+    position: relative;
+    top: -40px;
 }
-.grid_container img, .grid_recepies img {
+.skip:focus{
+    top: 0px;
+}
+
+.grid_container img, .felx_gallery img {
     margin: 0px;
     padding: 5px;
     filter: grayscale(60%);
@@ -134,7 +141,7 @@ a.skip{
     height:200px;
     overflow: hidden;
 }
-.grid_container img:hover, .grid_recepies img:hover{
+.grid_container img:hover, .flex_gallery img:hover{
     filter: grayscale(0%);
     background-color: rgb(196, 185, 202);
 }
@@ -143,11 +150,12 @@ a.skip{
 .grid_container{
      display: grid;
     justify-content: center;
+    grid-template-columns: 1fr 1fr ;
  }
- .grid_container img{
-     width: 90%;
- }
-
+.grid_container img {
+    border-radius: 7%;
+}
+/*
 .lifestyle{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -156,8 +164,7 @@ a.skip{
     justify-self: center;
     width: 200px;
     overflow: hidden;
-
-}
+}*/
 .homescreen{
     height: 100vh;
     background-image: url("../images/autum-salad-transp.jpg"); 
@@ -168,6 +175,7 @@ a.skip{
     background-size: cover;
 }
 ol{
+    display: fixed;
     margin: 10px
 }
 .bigger{
@@ -192,6 +200,9 @@ ol{
     font-weight: bold;
     font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
+}
+.radioButtons{
+    display: flex;
 }
 /*
 form{
@@ -224,6 +235,15 @@ input, textarea {
     height: 100vh;
     text-align: center;
     background-image: url("../images/salmon_transparent.jpg");
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dessert_heading{
+    height: 100vh;
+    text-align: center;
+    background-image: url("../images/choc-cake-background_transp.jpg");
     background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

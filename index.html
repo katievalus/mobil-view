@@ -33,8 +33,8 @@
             <nav class = 'nav'>
                 <input type = 'checkbox' id='nav__checkbox' class = "nav__checkbox">
                 <label  for = 'nav__checkbox' class='nav__toggle'>
-                    <i aria-label = 'menu bars' class="fa-solid fa-bars"></i>
-                    <i aria-label = 'x icon' class="fa-solid fa-xmark"></i>
+                    <i  class="fa-solid fa-bars"></i>
+                    <i  class="fa-solid fa-xmark"></i>
                 </label>
                     <ul class = 'nav__menu'>
                         <li class="active"><a href = "index.html">About Me</a></li>
@@ -60,23 +60,34 @@
 
     <div class = contactme>
         <h2 class = 'getInTouch'> Want to Get In Touch?</h2>
-        <p class = 'formBlurb'>Leave a message below with recepie reccomondations, business inquiries,
+        <p class = 'formBlurb'>Leave a message below with recipe recommendations, business inquiries,
             or just to say hi!
         </p>
-        <form
+    <form
         action="https://formspree.io/f/xqknlqqn"
-        method="POST"
->
-    <label for = 'email'>Your email:</label>
-    <input id = "email" type="email" name="email" placeholder="email@email.com">
+        method="POST">
+        <label for = 'email'>Your email:</label>
+        <input id = "email" type="email" name="email" placeholder="email@email.com">
   
-    <label for="msg">Leave A Message</label>
-    <textarea id = "msg" placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+        <label for="msg">Leave A Message</label>
+        <input id = "msg" type="text" name="msg" placeholder="Enter your message" >
+
+        <label for="name">Name</label>
+        <input id = "name" type="text" name="name" placeholder="Enter your name here" >
+        <div class = 'radioRuttons'>
+        <input type = 'radio' id = 'messagerecipie' name = 'type'>
+        <label for = "messagerecipie">Recepie</label>
+
+        <input type = 'radio' id = 'business' name = 'type'>
+        <label for = "business">Business</label>
+
+        <input type = 'radio' id = 'Other' name = 'type'>
+        <label for = "Other">Other</label>
+
+        </div>
+        <button type="submit">Send</button>
   
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-  
-</form>
+    </form>
     </div>
 
 
@@ -87,7 +98,7 @@
         <img src = "images/whitebean.jpg" alt = "white bean dip" />
         <img src = "images/gsmoothie.jpg" alt = "green smoothie" />
         <img src = "images/omlet.jpg" alt = "omlet with veggies" />
-`       <img src = "images/cod.jpg" alt = "cod prepared with veggies" />
+        <img src = "images/cod.jpg" alt = "cod prepared with veggies" />
         <img src = "images/cake.jpg" alt = "chocolate cake" />
         <img src = "images/strawberries.jpg" alt = "chocolate covered strawberries" />
     </div>
